@@ -1,0 +1,17 @@
+
+=== 0.0.1
+
+The plugin does the following changes when the quick fix is applied on a JAX-RS controller;
+
+- `@Service` => `@RestController`
+- Class level `@Path` => `@RequestMapping`
+- Method level `@DELETE` + `@Path` => `@DeleteMapping`
+- Method level `@GET` + `@Path` => `@GetMapping`
+- Method level `@PATCH` + `@Path` => `@PatchMapping`
+- Method level `@POST` + `@Path` => `@PostMapping`
+- Method level `@PUT` + `@Path` => `@PutMapping`
+- Parameter level `@PathParam` -> `@PathVariable`
+- Parameter level `@HeaderParam` -> `@RequestHeader`
+- Adds `@RequestBody` on not annotated parameter
+- Return type `Response` -> `ResponseEntity<T>`
+- Return statement building `Response` -> building `ResponseEntity`

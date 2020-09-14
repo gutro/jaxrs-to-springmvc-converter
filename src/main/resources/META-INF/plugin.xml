@@ -1,0 +1,19 @@
+<idea-plugin>
+  <id>com.gearsofleo.intellij.rest.converter.plugin</id>
+  <name>JAX-RS To Spring MVC Converter</name>
+  <vendor url="https://github.com/gutro/jaxrs-to-springmvc-converter/">
+    JAX-RS to Spring MVC converter plugin
+  </vendor>
+  <depends>com.intellij.modules.java</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <localInspection groupPath="Java"
+                     groupName="Spring"
+                     displayName="Convert JAX-RS to Spring MVC"
+                     language="JAVA"
+                     enabledByDefault="true"
+                     cleanupTool="true"
+                     level="WARNING"
+                     implementationClass="com.gearsofleo.intellij.rest.converter.plugin.RestControllerAnnotationsInspection"/>
+  </extensions>
+</idea-plugin>

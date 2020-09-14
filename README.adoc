@@ -1,0 +1,21 @@
+= JUnit 4 to Junit 5 Converter Plugin
+
+== About
+
+Convert your JAX-RS/Jersey REST endpoints to Spring MVC.
+
+=== Inspections
+
+This plugin adds the following inspection in the `Java` / `Spring` inspections group:
+
+==== Convert JAX-RS To Spring MVC
+
+Triggers on any JAX-RS class level `@Path` usage, and suggest converting it to a Spring MVC Rest controller. Provides a quick-fix to do the conversion.
+
+=== Actions
+
+This plugin does not add any action. If you need to convert many endpoints in a project, use the general `Code cleanup...` action with an inspection profile that contains the `Convert JAX-RS To Spring MVC` inspection.
+
+== Developers
+
+- Tommy Karlsson

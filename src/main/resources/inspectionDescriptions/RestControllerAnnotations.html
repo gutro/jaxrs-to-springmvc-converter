@@ -1,0 +1,21 @@
+<html>
+<body>
+<p>
+    Detects JAX-RS controllers that can be converted to Spring MVC.
+</p>
+<p>
+    This inspection detects <b>all</b> JAX-RS rest controllers as sources for migration to Spring MVC.
+    In many cases the class cannot be completely converted automatically into a fully functional
+    Spring MVC controller, but the inspection will suggest a quickfix to do the bulk of the changes,
+    and leave the final bits and pieces for manual fixing.
+</p>
+<p>
+    The quick fix will convert JAX-RS annotations to Spring MVC annotations, and add @RequestBody
+    annotations where needed. It will also change the return type of annotated methods from
+    JAX-RS Response to Spring MVC ResponseEntity, and in some cases rewrite the actual return statement
+    to return a ResponseEntity instance.
+</p>
+<!-- tooltip end -->
+<p></p>
+</body>
+</html>
