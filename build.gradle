@@ -1,12 +1,12 @@
 
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '1.0'
+    id 'org.jetbrains.intellij' version '0.7.3'
     id "org.asciidoctor.jvm.convert" version "3.1.0"
 }
 
 group 'com.gearsofleo'
-version '0.0.2-SNAPSHOT'
+version '0.7.3-SNAPSHOT'
 
 java {
     toolchain {
